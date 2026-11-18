@@ -3,7 +3,7 @@ Explorador de Rick and Morty
 Aplicación web que consume una API pública para buscar personajes de la serie Rick and Morty.
 
 URL de la aplicación
-https://004sdffgh.github.io/rick-and-morty/
+https://github.com/004sdffgh/rick-and-morty.git
 
 API utilizada
 The Rick and Morty API (https://rickandmortyapi.com). Es una API pública y gratuita que no necesita llave ni datos personales. Devuelve en formato JSON la información de los personajes de la serie.
