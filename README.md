@@ -51,19 +51,19 @@ Códigos de error posibles: 404 cuando la búsqueda no tiene resultados, y otros
 
 ### Resultados al abrir la página
 
-![Resultados](Capturas/resultados.png)
+![Resultados](resultados.png)
 
 ### Búsqueda con filtro de estado
 
-![Búsqueda](Capturas/busqueda.png)
+![Búsqueda](busqueda.png)
 
 ### Búsqueda sin resultados
 
-![Sin resultados](Capturas/sin-resultados.png)
+![Sin resultados](sin-resultados.png)
 
 ### Mensaje de error sin conexión
 
-![Error](Capturas/error.png)
+![Error](error.png)
 
 ## Reflexión técnica
 
