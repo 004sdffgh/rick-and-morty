@@ -3,31 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Busca personajes de Rick and Morty usando la API pública rickandmortyapi.com.">
   <title>Explorador de Rick and Morty</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Explorador de Rick and Morty</h1>
+  <header>
+    <h1>Explorador de Rick and Morty</h1>
+  </header>
 
-  <div class="controles">
-    <input type="text" id="busqueda" placeholder="Buscar personaje (ej. Rick)">
-    <select id="estado">
-      <option value="">Todos los estados</option>
-      <option value="alive">Vivo</option>
-      <option value="dead">Muerto</option>
-      <option value="unknown">Desconocido</option>
-    </select>
-    <button id="btnBuscar">Buscar</button>
-  </div>
+  <main>
+    <div class="controles">
+      <label for="busqueda" class="oculto">Nombre del personaje</label>
+      <input type="text" id="busqueda" placeholder="Buscar personaje (ej. Rick)">
+      <label for="estado" class="oculto">Estado del personaje</label>
+      <select id="estado">
+        <option value="">Todos los estados</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Muerto</option>
+        <option value="unknown">Desconocido</option>
+      </select>
+      <button type="button" id="btnBuscar">Buscar</button>
+    </div>
 
-  <p id="mensaje"></p>
-  <div id="resultados"></div>
+    <p id="mensaje" role="status" aria-live="polite"></p>
+    <section id="resultados" aria-label="Resultados de la búsqueda"></section>
 
-  <div id="paginacion">
-    <button id="btnAnterior">Anterior</button>
-    <span id="infoPagina"></span>
-    <button id="btnSiguiente">Siguiente</button>
-  </div>
+    <nav id="paginacion" aria-label="Paginación">
+      <button type="button" id="btnAnterior">Anterior</button>
+      <span id="infoPagina"></span>
+      <button type="button" id="btnSiguiente">Siguiente</button>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Datos: The Rick and Morty API · Actividad 4 · Laboratorio de Programación Web · FIME, UANL</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

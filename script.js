@@ -48,14 +48,14 @@ function mostrarPersonajes(personajes, total) {
   mensaje.textContent = total + " personajes encontrados";
 
   personajes.forEach(p => {
-    const tarjeta = document.createElement("div");
+    const tarjeta = document.createElement("article");
     tarjeta.className = "tarjeta";
 
     const imagen = document.createElement("img");
     imagen.src = p.image;
     imagen.alt = "Foto de " + p.name;
 
-    const nombre = document.createElement("h3");
+    const nombre = document.createElement("h2");
     nombre.textContent = p.name;
 
     const estado = document.createElement("p");
